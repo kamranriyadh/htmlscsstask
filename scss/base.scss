@@ -1,0 +1,87 @@
+@import "variables";
+
+/* Mixins */
+
+@mixin my-theme($my-color) {
+	border-color: darken($my-color, 20%);
+	background-color: $my-color!important;
+}
+
+@mixin trans($val...) {
+	-webkit-transition: $val;
+	-moz-transition: $val; 
+	-o-transition: $val; 
+	transition: $val; 
+}
+
+/* Theme change button */
+
+.btn {
+	display: inline-block;
+	margin: 5px; 
+	padding: 8px 8px;
+	color: #FFF;
+	font: bold 0.8rem sans-serif;
+	@include trans(0.2s ease-in-out); 
+	text: {
+		transform: uppercase;
+		decoration: none;
+		shadow: 0 .063em rgba(black,.3);
+	}
+  cursor:pointer;
+}
+/* Themes */
+
+.purple {
+	@include my-theme($purple);
+}
+.blue {
+	@include my-theme($blue);
+}
+.green {
+	@include my-theme($green);
+}
+.orange {
+	@include my-theme($orange);
+}
+
+// This is column mixins.
+@mixin col ($col, $sum, $gap: 1em, $align: top, $direction: rtl, $first: false, $last: false) {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+   /* padding-left: if($first, 0, $gap);
+    padding-right: if($last, 0, $gap);*/
+
+    @media only screen and (min-width: 768px) {
+            width: percentage($col/$sum);
+            vertical-align: $align;
+    }
+
+    &.fluid { width: percentage($col/$sum); }
+}
+
+.singlecolumn {
+  @include col(1, 1);
+}
+
+ul li { list-style: none;}
+
+
+.mediaobject {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    hr {background-color: #3D4A5A;height: 2px; border: 0;margin-bottom: 18px;}
+    .media-left {float: left; margin: -18px 1px 0px 5px;
+        img {padding: 5px 7px 8px 9px;}
+    }
+    .media-right {float: right;}
+    .username {font-family: Dubai-Medium;
+                font-size: 14px;float: right;padding: 5px 0px 0px 1px;
+                color: #EDF4FC;}
+    .usercompany{font-family: Dubai-Medium;
+                font-size: 11px;float: right;margin: -3px -1px 0px 1px;
+                color: rgba(237,244,252,0.50);}
+    .avator {padding: 0px 16px 16px 8px;}
+}

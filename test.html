@@ -1,0 +1,154 @@
+<html5>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML SCSS Task</title>
+    <meta name="description" content="UX UI Designer Graphics Designer Front-End Developerin Riyadh" />
+    <meta name="keywords" content="UX UI Designer in Riyadh, Graphics Designer in Riyadh, Front-End Developer in Riyadh" />
+    <meta name="author" content="Kamran Haider" />
+    <link rel="stylesheet" href="scss/base.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/fm.checkator.jquery.css"/>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script src="js/fm.checkator.jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    window.onload = function() {
+        var anchors = document.getElementsByClassName("checkator_holder");
+        for(var i = 0; i < anchors.length; i++) {
+            var anchor = anchors[i];
+            anchor.onclick = function() {
+                $(this).next().toggleClass("nostrike"); 
+            }
+        }
+    }
+</script>
+</head>
+<body> 
+<div class="container"> 
+  <div id="rightside" class="col-md-2"> 
+      
+      <!--  SideNav Starts here -->
+      
+    <div id="mySidenav" class="sidenav"> <span><svg width="10px" height="10px" onclick="closeNav()" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <polygon id="path-5" points="12.6666667 4.27333333 11.7266667 3.33333333 8 7.06 4.27333333 3.33333333 3.33333333 4.27333333 7.06 8 3.33333333 11.7266667 4.27333333 12.6666667 8 8.94 11.7266667 12.6666667 12.6666667 11.7266667 8.94 8"></polygon> </defs> <g id="Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-835.000000, -11.000000)" opacity="0.25"> <g id="menu" transform="translate(824.000000, 0.000000)"> <g id="close-icon" transform="translate(8.000000, 8.000000)"> <mask id="mask-2" fill="white"> <use xlink:href="#path-5"></use> </mask> <use id="icon-close" fill="#444444" fill-rule="nonzero" xlink:href="#path-5"></use> </g> </g> </g> </svg></span> 
+      <h1 class="tamlogo"> <img src="assets/logo.png"> </h1> 
+      <nav class="navbar-static-side" role='navigation'> 
+      <ul> 
+        <li class="selected" > <svg  width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M2,5 L22,5 L22,8 L2,8 L2,5 Z M2,11 L22,11 L22,14 L2,14 L2,11 Z M2,17 L22,17 L22,20 L2,20 L2,17 Z" id="path-1"></path> </defs> <g id="Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-994.000000, -81.000000)"> <g id="menu" transform="translate(824.000000, 0.000000)"> <g id="links" transform="translate(0.000000, 64.000000)"> <g id="◼️link1"> <g id="🔘-right" transform="translate(168.000000, 12.000000)"> <mask id="mask-2" fill="white"> <use xlink:href="#path-1"></use> </mask> <use id="icon-list" fill="#273648" fill-rule="nonzero" xlink:href="#path-1"></use> </g> </g> </g> </g> </g> </svg> المهام</li> 
+        <li><svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M3,5 L3,19 C3,20.1 3.89,21 5,21 L19,21 C20.1,21 21,20.1 21,19 L21,5 C21,3.9 20.1,3 19,3 L5,3 C3.89,3 3,3.9 3,5 Z M15,9 C15,10.66 13.66,12 12,12 C10.34,12 9,10.66 9,9 C9,7.34 10.34,6 12,6 C13.66,6 15,7.34 15,9 Z M6,17 C6,15 10,13.9 12,13.9 C14,13.9 18,15 18,17 L18,18 L6,18 L6,17 Z" id="path-2"></path> </defs> <g id="Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-995.000000, -135.000000)"> <g id="menu" transform="translate(824.000000, 0.000000)"> <g id="links" transform="translate(0.000000, 64.000000)"> <g id="◼️link2" transform="translate(0.000000, 56.000000)"> <g id="🔘-right" transform="translate(168.000000, 12.000000)"> <mask id="mask-2" fill="white"> <use xlink:href="#path-2"></use> </mask> <use id="icon-user" fill="#273648" fill-rule="nonzero" xlink:href="#path-2"></use> </g> </g> </g> </g> </g> </svg>الأعضاء</li> 
+        <li><svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M20,4 L4,4 C2.89,4 2.01,4.89 2.01,6 L2,18 C2,19.11 2.89,20 4,20 L20,20 C21.11,20 22,19.11 22,18 L22,6 C22,4.89 21.11,4 20,4 Z M20,18 L4,18 L4,12 L20,12 L20,18 Z M20,8 L4,8 L4,6 L20,6 L20,8 Z" id="path-3"></path> </defs> <g id="Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-994.000000, -192.000000)"> <g id="menu" transform="translate(824.000000, 0.000000)"> <g id="links" transform="translate(0.000000, 64.000000)"> <g id="◼️link3" transform="translate(0.000000, 112.000000)"> <g id="🔘-right" transform="translate(168.000000, 12.000000)"> <mask id="mask-2" fill="white"> <use xlink:href="#path-3"></use> </mask> <use id="icon-creditcard" fill="#444444" fill-rule="nonzero" xlink:href="#path-3"></use> </g> </g> </g> </g> </g> </svg>الدفع والفواتير</li> 
+        <li><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M19.43,12.98 C19.47,12.66 19.5,12.34 19.5,12 C19.5,11.66 19.47,11.34 19.43,11.02 L21.54,9.37 C21.73,9.22 21.78,8.95 21.66,8.73 L19.66,5.27 C19.54,5.05 19.27,4.97 19.05,5.05 L16.56,6.05 C16.04,5.65 15.48,5.32 14.87,5.07 L14.49,2.42 C14.46,2.18 14.25,2 14,2 L10,2 C9.75,2 9.54,2.18 9.51,2.42 L9.13,5.07 C8.52,5.32 7.96,5.66 7.44,6.05 L4.95,5.05 C4.72,4.96 4.46,5.05 4.34,5.27 L2.34,8.73 C2.21,8.95 2.27,9.22 2.46,9.37 L4.57,11.02 C4.53,11.34 4.5,11.67 4.5,12 C4.5,12.33 4.53,12.66 4.57,12.98 L2.46,14.63 C2.27,14.78 2.22,15.05 2.34,15.27 L4.34,18.73 C4.46,18.95 4.73,19.03 4.95,18.95 L7.44,17.95 C7.96,18.35 8.52,18.68 9.13,18.93 L9.51,21.58 C9.54,21.82 9.75,22 10,22 L14,22 C14.25,22 14.46,21.82 14.49,21.58 L14.87,18.93 C15.48,18.68 16.04,18.34 16.56,17.95 L19.05,18.95 C19.28,19.04 19.54,18.95 19.66,18.73 L21.66,15.27 C21.78,15.05 21.73,14.78 21.54,14.63 L19.43,12.98 Z M12,15.5 C10.07,15.5 8.5,13.93 8.5,12 C8.5,10.07 10.07,8.5 12,8.5 C13.93,8.5 15.5,10.07 15.5,12 C15.5,13.93 13.93,15.5 12,15.5 Z" id="path-4"></path> </defs> <g id="Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-994.000000, -246.000000)"> <g id="menu" transform="translate(824.000000, 0.000000)"> <g id="links" transform="translate(0.000000, 64.000000)"> <g id="◼️link4" transform="translate(0.000000, 168.000000)"> <g id="🔘-right" transform="translate(168.000000, 12.000000)"> <mask id="mask-2" fill="white"> <use xlink:href="#path-4"></use> </mask> <use id="icon-settings" fill="#273648" fill-rule="nonzero" xlink:href="#path-4"></use> </g> </g> </g> </g> </g> </svg>إعدادات</li> 
+        <li> Change Theme<br> 
+          <a class="purple btn" onclick="purpletheme()"> </a> <a class="blue btn" onclick="bluetheme()"> </a> <a class="green btn" onclick="greentheme()"> </a> <a class="orange btn" onclick="orangetheme()"> </a> </li> 
+      </ul> 
+      </nav> 
+      <div class="mediaobject"> 
+        <hr class="separator"> 
+        <div class="media-right"> <img src="assets/avatar.png" class="avator"> </div> 
+        <div class="media"> <span class="username">محمد عبدالله</span> <span class="usercompany">الشركة المحدودة</span> </div> 
+        <div class="media-left"> <img src="assets/icon-arrow-down-small.png"> </div> 
+      </div> 
+    </div> 
+      
+      <!--  SideNav Ends here -->
+      
+  </div> 
+  <div id="leftside" class="col-md-9">
+      
+      <!--  Top search bar starts here -->
+      
+    <div class="col-md-12 whiteboxnospace"> 
+      <div id="opennav"><svg  width="20px" height="15px" onclick="openNav()" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <path d="M2,5 L22,5 L22,8 L2,8 L2,5 Z M2,11 L22,11 L22,14 L2,14 L2,11 Z M2,17 L22,17 L22,20 L2,20 L2,17 Z" id="path-8"></path> </defs> <g id="Todo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-994.000000, -81.000000)"> <g id="menu" transform="translate(824.000000, 0.000000)"> <g id="links" transform="translate(0.000000, 64.000000)"> <g id="◼️link1"> <g id="🔘-right" transform="translate(168.000000, 12.000000)"> <mask id="mask-2" fill="white"> <use xlink:href="#path-8"></use> </mask> <use id="icon-list" fill="#273648" fill-rule="nonzero" xlink:href="#path-8"></use> </g> </g> </g> </g> </g> </svg></div> 
+      <select class="myselect"> 
+        <option value=""> جميع المهام </option> 
+      </select> 
+      <input type="search" class="mysearch" value="بحث"> 
+    </div> 
+      
+      <!--  Top search bar ends here -->
+      
+      <!--  Tasmeem Starts here -->
+    <div class="singlecolumn"> 
+      <h1> التصميم:</h1> 
+      <ul id="sortable1" class="connectedSortable whitebox"> 
+        <li class="ui-state-default"> 
+          <input type="checkbox" name="checkbox2_1" class="checkbox2" id="checkbox2_1"> 
+          <label for="checkbox2_1">تصميم الشكل العام وتجهيز المهام وتسليمه</label> 
+            
+        </li> 
+        <li class="ui-state-default"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2"> 
+          <label for="checkbox2_2">تحويل التصميم إلى HTML + CSS </label> 
+            <span class="tasktags">css</span>
+        </li> 
+        <li class="ui-state-default"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_3"> 
+            <label for="checkbox2_2">
+جعل التصميم متجاوب مع المتصفحات الصغيرة (Responsive)</label> 
+          <span class="tasktags">css</span></li> 
+        <li class="ui-state-default"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_4"> 
+            <label for="checkbox2_2">
+جعل التصميم متوافق كحد أدنى مع IE9</label> 
+            <span class="tasktags">Browsers</span>
+          </li> 
+        <li class="ui-state-default"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_5">
+            <label for="checkbox2_2">
+استخدام SASS لجعل ألوان التصميم سهلة التغيير (Skin-able/Theme-able)</label> 
+            <span class="tasktags">SASS</span>
+          </li> 
+      </ul> 
+    </div> 
+     <!--  Tasmeem ends here -->
+      
+      <!--  Tahseenaat Starts here -->
+    <div class="singlecolumn"> 
+      <h1> تحسينات:</h1> 
+      <ul id="sortable2" class="connectedSortable whitebox"> 
+        <li class="ui-state-highlight"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2"> 
+            <label for="checkbox2_2">
+إمكانية إخفاء القائمة الجانبية</label> 
+          </li> 
+        <li class="ui-state-highlight"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2"> 
+            <label for="checkbox2_2">
+إمكانية تعليم المهام كمنتهية</label> 
+          </li> 
+        <li class="ui-state-highlight"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2"> 
+            <label for="checkbox2_2">
+إمكانية إعادة ترتيب المهام والمجموعات</label> 
+          </li> 
+        <li class="ui-state-highlight"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2">
+            <label for="checkbox2_2">
+التوافقية مع أجهزة اللمس</label> 
+          </li> 
+      </ul> 
+    </div> 
+      <!--  Tahseenaat ends here -->
+      
+      <!--  Akhari starts here -->
+    <div class="singlecolumn"> 
+      <h1> أخرى:</h1> 
+      <ul id="sortable2" class="connectedSortable whitebox"> 
+        <li class="ui-state-highlight"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2"> 
+            <label for="checkbox2_2">
+تسليم المشروع النهائي في git repository مع ملاحظة استخدام git-flow</label> 
+          </li> 
+        <li class="ui-state-highlight"> 
+          <input type="checkbox" name="checkbox2_2" class="checkbox2" id="checkbox2_2">
+            <label for="checkbox2_2">
+إضافة لمساتك الخاصة في الأماكن التي تراها مناسبة مع ذكر سبب إضافتها.</label> 
+          </li> 
+      </ul> 
+    </div>
+      <!--  Akhari ends here -->
+  </div> 
+</div> 
+</body>
+</html5>
